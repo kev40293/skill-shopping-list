@@ -1,1 +1,2 @@
 add (?P<Item>\w+) to (?P<List>\w+) list
+remove (?P<Item>\w+) from (?P<List>\w+) list

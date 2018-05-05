@@ -15,11 +15,14 @@ class ShoppingListSkill(MycroftSkill):
     def add_item_to_list(self, message):
         item = message.data.get('Item')
         listName = message.data.get('List')
-        self.speak_dialog("list.add", data={"item": item, "List": listName})
+        self.speak_dialog("list.add.item", data={"item": item, "List": listName})
         # Now to add backend code for add
 
+    @intent_handler(IntentBuilder("").require('Remove').require('Item').require('List'))
     def remove_item_from_list(self, message):
-        pass
+        item = message.data.get('Item')
+        listName = message.data.get('List')
+        self.speak_dialog("list.remove.item", data={"item": item, "List": listName})
 
     def clear_list(self,message):
         pass
@@ -27,6 +30,11 @@ class ShoppingListSkill(MycroftSkill):
     def send_list(self, message):
         pass
 
+    def create_list(self, message):
+        pass
+
+    def delete_list(self, message):
+        pass
 
 def create_skill():
     return ShoppingListSkill()

@@ -1,0 +1,10 @@
+{
+   "utterance" :"remove milk from grocery list",
+   "intent_type": "remove_item_from_list",
+   "intent" : {
+      "Remove": "Remove",
+      "Item": "milk",
+      "List": "grocery"
+   },
+   "expected_response" : "removed milk from grocery list"
+}

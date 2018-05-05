@@ -1,8 +1,0 @@
-{
-   "utterence" :"add item to shopping list",
-   "intent_type": "add_item_to_list",
-   "intent" : {
-      "Item": "item"
-   },
-   "expected_response" : "Added item to shopping list"
-}

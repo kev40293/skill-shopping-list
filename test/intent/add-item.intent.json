@@ -1,0 +1,10 @@
+{
+   "utterance" :"add milk to grocery list",
+   "intent_type": "add_item_to_list",
+   "intent" : {
+      "Add": "Add",
+      "Item": "milk",
+      "List": "grocery"
+   },
+   "expected_response" : "added milk to grocery list"
+}

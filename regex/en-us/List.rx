@@ -1,1 +1,1 @@
-to (?P<List>\w+) list
+(to|from) (?P<List>\w+) list
